@@ -1,6 +1,6 @@
 # Object-detection-using-YOLO
-In this project I have implimented object detection using YOLO(You Look Only Once). YOLO is deep learning algorithm introduced in may 2016 and it quickly becomes populer as it is fast as well as acurate even on CPU
+In this project I have implemented object detection using YOLO(You Look Only Once). YOLO is deep learning algorithm introduced in may 2016 and it quickly become popular as it is fast as well as accurate even on CPU
 
-* Weight files can be found [here](https://pjreddie.com/darknet/yolo/)
+### Weight files can be found [here](https://pjreddie.com/darknet/yolo/)
 
-* [youtube video](https://youtu.be/b-kcZo_19CY)
+### [youtube video](https://youtu.be/b-kcZo_19CY)
