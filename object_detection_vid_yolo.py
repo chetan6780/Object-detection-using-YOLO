@@ -15,7 +15,7 @@ import numpy as np
 # paths for weight and configuration files and video path
 weight_path = r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\yolov3.weights'
 cfg_path = r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\yolov3.cfg'
-video_path= r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\media\sonali_kul.mp4'
+video_path= r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\media\vid2.mp4'
 
 # creating the list of names from the coco dataset
 classes = []
