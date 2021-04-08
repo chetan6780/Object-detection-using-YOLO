@@ -1,11 +1,10 @@
 import cv2
 import numpy as np
-from numpy.core.defchararray import center, index
 
 # paths for weight , configuration file and input image
 weight_path = r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\yolov3.weights'
 cfg_path = r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\yolov3.cfg'
-img_path = r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\media\horse.jpg'
+img_path = r'C:\Users\Admin\Desktop\TSF\TASKS\1\object-detection-using-YOLO\media\person.jpg'
 
 net = cv2.dnn.readNet(cfg_path, weight_path)
 
@@ -22,13 +21,7 @@ height, width, _ = img.shape
 blob = cv2.dnn.blobFromImage(
     img, 1/255, (416, 416), (0, 0, 0), swapRB=True, crop=False)
 
-# It gives 3 images , below code shows it
-# for b in blob:
-#     for n, img_blob in enumerate(b):
-#         cv2.imshow(str(n), img_blob)
-
 # here we set the input from blob to network and get output layer names and from these names we can obtain the layer outputs as list layer outputs gets 85 parameters first 4 are (x,y,w,h) and 5 th is confidence and remaining 80 are object names
-
 net.setInput(blob)
 output_layers_names = net.getUnconnectedOutLayersNames()
 layerOutputs = net.forward(output_layers_names)
