@@ -3,4 +3,4 @@ In this project I have implemented object detection using YOLO(You Look Only Onc
 
 ### Weight files can be found [here](https://pjreddie.com/darknet/yolo/)
 
-### [youtube video](https://youtu.be/b-kcZo_19CY)
+### [YouTube Video](https://youtu.be/b-kcZo_19CY)
