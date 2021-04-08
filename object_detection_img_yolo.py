@@ -13,7 +13,7 @@ net = cv2.dnn.readNet(cfg_path, weight_path)
 classes = []
 with open('coco.names', 'r') as f:
     classes = f.read().splitlines()
-# print(classes)
+print(classes)
 
 img = cv2.imread(img_path)
 height, width, _ = img.shape
@@ -27,9 +27,8 @@ blob = cv2.dnn.blobFromImage(
 #     for n, img_blob in enumerate(b):
 #         cv2.imshow(str(n), img_blob)
 
-# here we set the input from blob to network and
-# get output layer names and from these names we can obtain the layer outputs as list
-# layer outputs gets 85 parameters first 4 are (x,y,w,h) and 5 th is confidence and remaining 80 are object names
+# here we set the input from blob to network and get output layer names and from these names we can obtain the layer outputs as list layer outputs gets 85 parameters first 4 are (x,y,w,h) and 5 th is confidence and remaining 80 are object names
+
 net.setInput(blob)
 output_layers_names = net.getUnconnectedOutLayersNames()
 layerOutputs = net.forward(output_layers_names)
